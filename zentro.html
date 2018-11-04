@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZENTRO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/uikit.css">
+	<link rel="stylesheet" type="text/css" href="../css/components/slideshow.css" />
+  	<link rel="stylesheet" type="text/css" href="../css/components/sticky.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/uikit.js"></script>
+	<script src="../js/components/slideshow.js"></script>
+    <script src="../js/components/sticky.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/components/parallax.js"></script>
+    <style type="text/css">
+
+    	body{
+    		font-family: calibri;
+    	}
+    	.test-bg {
+                height: 600px;
+                position: relative;
+                background-image: url('../images/3.jpg'); 
+                z-index:1; 
+            }
+
+            .overlay{
+            	height: 600px;
+            	position: absolute;
+            	width:100%; 
+            	background-image: 
+				    linear-gradient(
+				      rgba(0, 0, 0, 1),
+				      rgba(0, 0, 0, 0.5)
+				    );
+			    z-index:99 !important;
+            }
+
+            .uk-navbar-nav > li > a{
+            	font-family: calibri;
+            	text-transform: uppercase;
+            	letter-spacing: 1px; 
+            }
+            .uk-navbar-nav > li > a:hover{
+            	border-top:1px solid #000;
+            	border-bottom:1px solid #000;
+            }
+            .bg-img{
+            	position: fixed;
+            	top:0;
+            	left:0;
+            	background-image: 
+				    linear-gradient(
+				      rgba(0, 0, 0, 0.7),
+				      rgba(0, 0, 0, 0.7)
+				    ), url('../images/2.jpg');
+				background-size: cover;
+				z-index:0;
+            }
+
+            .z-ind{
+            	z-index: 1;
+            }
+
+    </style>
+</head>
+<body>
+	<nav class="uk-navbar" style="height:60px;" data-uk-sticky>
+		<div style="margin:10px 0;">
+			<div class="uk-container uk-container-center" >
+				<a class="uk-navbar-brand uk-text-bold">ZENTRO</a>
+				<div class="uk-navbar-flip">
+					<ul class="uk-navbar-nav">
+						<li><a href="zentro.html" data-uk-smooth-scroll="{duration: 800}">HOME</a></li>
+						<li><a href="#food" data-uk-smooth-scroll="{offset: 60, duration: 800}">FOOD GALLERY</a></li>
+						<li><a href="#menu" data-uk-smooth-scroll="{offset: 60, duration: 800}">SPECIAL MENU</a></li>
+						<li><a href="#chefs" data-uk-smooth-scroll="{offset: 60, duration: 800}">CHEFS</a></li>
+						<li><a href="#contact" data-uk-smooth-scroll="{offset: 60, duration: 800}">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="test-bg  uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg:-300, sepia: 100}">
+        <div class="uk-width-1-1 " style="z-index:999;">
+            <div class="uk-h1" style="color:#fff; letter-spacing: 2px;">ZENTRO RESTAURANT</div>
+            <div class="uk-margin-top uk-text-bold uk-heading-large" style="color:#fff; letter-spacing: 1.5px; font-family: sans-serif;text-shadow: 3px 3px 5px #777;">CLEAN & SIMPLE DESIGN</div>
+            <div class="uk-margin-large-top" style="color:#fff;"><button class="uk-button uk-button-large uk-text-large uk-text-bold" style="background: transparent; letter-spacing: 1 px; border: 3px solid #fff; color:#fff; padding: 15px 50px;">LEARN MORE</button> 
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="uk-block uk-block-muted uk-text-center uk-panel-header z-ind" id="food">
+    	<h2 class="uk-panel-tittle uk-text-bold" style="color: #000"><span style="border-bottom: 2px solid #666;"> Food Gallery</span></h2>
+    	<div class="uk-grid uk-grid-margin">
+    		<div class="uk-width-1-3">
+    			<div class="uk-margin">
+    				<img src="../images/1.jpg" style="height: 250px;">
+    				<p class="uk-text-large uk-text-bold uk-margin-small-bottom">Lemon-Rosemary Prawn</p>
+    				<p class="uk-margin-small-top">Seafood / Shrimp / Lemon</p>
+    				<img src="../images/3.jpg" style="height: 250px;">
+    				<p class="uk-text-large uk-text-bold uk-margin-small-bottom">Lemon-Rosemary Prawn</p>
+    				<p class="uk-margin-small-top">Seafood / Shrimp / Lemon</p>
+    			</div> 
+    		</div>
+    		<div class="uk-width-1-3">
+    			<div class="uk-margin">
+    				<img src="../images/2.jpg" style="height: 580px;">
+    				<p class="uk-text-large uk-text-bold uk-margin-small-bottom">Lemon-Rosemary Prawn</p>
+    				<p class="uk-margin-small-top">Seafood / Shrimp / Lemon</p>
+    			</div> 
+    		</div>
+    		<div class="uk-width-1-3">
+    			<div class="uk-margin">
+    				<img src="../images/1.jpg" style="height: 250px;">
+    				<p class="uk-text-large uk-text-bold uk-margin-small-bottom">Lemon-Rosemary Prawn</p>
+    				<p class="uk-margin-small-top">Seafood / Shrimp / Lemon</p>
+    			
+    				<img src="../images/3.jpg" style="height: 250px;">
+    				<p class="uk-text-large uk-text-bold uk-margin-small-bottom">Lemon-Rosemary Prawn</p>
+    				<p class="uk-margin-small-top">Seafood / Shrimp / Lemon</p>
+    			</div> 
+    		</div>
+    	</div>
+    </div>
+    <div class="uk-block uk-text-center uk-panel-header z-ind" style="background-color: #eee" id="menu">
+    	<h2 class="uk-panel-tittle uk-text-bold" style="color: #000">
+    		<span style="border-bottom: 2px solid #666;">
+    			Special Menu
+    		</span>
+    	</h2>
+    	<div class="uk-grid uk-grid-margin">
+    		<dl class="uk-description-list uk-description-list-line uk-width-medium-1-2">
+    			<dt class="uk-text-large uk-text-bold">Lemon-Rosemary Vegetable ................ $20.50</dt>
+    			<dd>Chicken / Rosemary / Lemon</dd>
+    			<dt class="uk-text-large uk-text-bold">Lemon-Rosemary Pork ........................ $40.75</dt>
+    			<dd>Pork / Tooplate / Lemon</dd>
+    			<dt class="uk-text-large uk-text-bold">Lemon-Rosemary Squid ...................... $65.00</dt>
+    			<dd>Squid / Rosemary / Lemon</dd>
+    			<dt class="uk-text-large uk-text-bold">Lemon-Rosemary Prawn ................... $110.75</dt>
+    			<dd>Chicken / Rosemary / Lemon</dd>
+    		</dl>
+    		<dl class="uk-description-list uk-description-list-line uk-width-medium-1-2">
+    			<dt class="uk-text-large uk-text-bold">Lemon-Rosemary Meat ........................... $30.50</dt>
+    			<dd>Meat / Rosemary / Lemon</dd>
+    			<dt class="uk-text-large uk-text-bold">Orange-Rosemary Salad .......................... $55.00</dt>
+    			<dd>Salad / Rosemary / Orange</dd>
+    			<dt class="uk-text-large uk-text-bold">Orange-Rosemary Shrimp ........................ $70.50</dt>
+    			<dd>Shrimp / Rosemary / Orange</dd>
+    			<dt class="uk-text-large uk-text-bold">Lemon-Rosemary Seafood ..................... $220.50</dt>
+    			<dd>Seafood / Rosemary / Lemon</dd>
+    		</dl>
+    	</div>
+    </div>
+    <div class="uk-block uk-text-center uk-text-header z-ind uk-block-muted" id="chefs">
+    	<h2 class="uk-panel-tittle uk-text-bold" style="color: #000">
+    		<span style="border-bottom: 2px solid #666;">
+    			Meet Zentro chefs
+    		</span>
+    	</h2>
+    	<div class="uk-grid uk-grid-margin">
+    		<div class="uk-width-1-3">
+    			<img src="http://www.free-css.com/assets/files/free-css-templates/preview/page197/zentro/assets/images/team1.jpg">
+    			<h2>Thanya</h2>
+    			<h2 class="uk-text-bold" style="color: #000">Main Chef</h2>
+    		</div>
+    		<div class="uk-width-1-3">
+    			<img src="http://www.free-css.com/assets/files/free-css-templates/preview/page197/zentro/assets/images/team2.jpg">
+    			<h2>Lynda</h2>
+    			<h2 class="uk-text-bold" style="color: #000">Pizza Specialist</h2>
+    		</div>
+    		<div class="uk-width-1-3">
+    			<img src="http://www.free-css.com/assets/files/free-css-templates/preview/page197/zentro/assets/images/team3.jpg">
+    			<h2>Jenny Ko</h2>
+    			<h2 class="uk-text-bold" style="color: #000">New Baker</h2>
+    		</div>
+    	</div>
+    </div>
+    <div class="uk-block uk-text-center uk-text-header z-ind" style="background-color: #eee" id="contact">
+    	<h2 class="uk-panel-tittle uk-text-bold" style="color: #000">
+    		<span style="border-bottom: 2px solid #666">
+    			Contact Us
+    		</span>
+    	</h2>
+    	<form class="uk-form uk-margin">
+    		<input type="text" placeholder="Name" class="uk-form-large uk-form-width-large">
+    		<input type="text" placeholder="Email" class="uk-form-large uk-form-width-large">
+    	</form>
+    	<div class="uk-form-row">
+            <div class="uk-form-controls">
+                <textarea id="form-s-t" cols="140" rows="10" placeholder="Message"></textarea>
+            </div>
+        </div>
+        <button class="uk-button uk-button-large uk-text-large uk-margin-top" style="border: 1.5px solid #666; border-radius: 10px; padding: 5px 100px; letter-spacing: 2px;">make a reservation</button>
+    </div>
+    <div class="uk-block uk-text-center uk-vertical-align z-ind" style="color: #fff; height: 100vh;"  > 
+	    <div class="uk-vertical-align-middle uk-width-1-1">
+	    	<div class="uk-grid uk-grid-margin ">
+	    		<div class="uk-width-1-3">
+	    			<div class="uk-h1">Contact Info.</div>
+	    			<div class="uk-text-large">
+	    				<p>Phone</p>
+	    				<p>090-080-0760</p> 
+	    			</div>
+	    			<div class="uk-text-large">
+	    				<p>Our Location</p>
+	    				<p>120 Duis aute irure, California, USA</p>
+	    			</div>
+	    		</div>
+	    		<div class="uk-width-1-3">
+		    		<div class="uk-h1">Open Hours</div>
+		    		<div class="uk-text-large">
+	    			 	<p>Sunday 10:30 AM - 10:00 PM </p>
+	    			 	<p>Mon-Fri 9:00 AM - 8:00 PM</p>
+	    			 	<p>Saturday 11:30 AM - 10:00 PM </p>
+	    			 </div>
+	    		</div>
+	    		<div class="uk-width-1-3">
+	    			<div class="uk-h1">Follow Us</div>
+	    			<ul class="uk-list">
+	    				<li>
+	    					<a style="color:blue solid" class="uk-icon-medium uk-icon-facebook-square" href="https://www.facebook.com"></a>
+         				</li>
+         				<li>
+         					<a class="uk-icon-medium uk-icon-twitter" href="https://twitter.com"></a>
+         				</li>
+         				<li>
+         					<a style="color:red" class="uk-icon-medium uk-icon-google-plus-square" href="https://plus.google.com"></a>
+         				</li>
+         				<li>
+         					<a style="color:red" class="uk-icon-medium uk-icon-instagram" href=""></a>
+         				</li>
+	    			</ul>	
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+    <div class="uk-block uk-block-secondary z-ind" style="color: #fff"; >
+    	<h1>ZENTRO</h1>
+    	<h3>Copyright © All Rights Reserved | Design: Localyt</h3>
+    </div>
+    <div class="bg-img uk-height-viewport uk-width-1-1 uk-block">	
+    </div> 
+</body>
+</html>
